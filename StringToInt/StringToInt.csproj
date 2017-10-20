@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E6827E9D-ED83-4660-B51D-6E6CCDA7009D}</ProjectGuid>
+    <ProjectGuid>{C38972CF-8DC5-4677-821C-CBC2B7C2C37F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FirstCharReturner</RootNamespace>
-    <AssemblyName>FirstCharReturner</AssemblyName>
+    <RootNamespace>StringToInt</RootNamespace>
+    <AssemblyName>StringToInt</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
