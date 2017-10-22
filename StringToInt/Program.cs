@@ -14,15 +14,7 @@ namespace StringToInt
                 {
                     Console.WriteLine(input.ToInt());
                 }
-                catch (FormatException e)
-                {
-                    Console.WriteLine(e.Message);
-                }
-                catch (OverflowException e)
-                {
-                    Console.WriteLine(e.Message);
-                }
-                catch (ArgumentNullException e)
+                catch (Exception e) when (e is FormatException || e is OverflowException || e is ArgumentNullException)
                 {
                     Console.WriteLine(e.Message);
                 }

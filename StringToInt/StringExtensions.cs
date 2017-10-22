@@ -39,8 +39,9 @@ namespace StringToInt
 
                 checked
                 {
+                    const char CharToIntegerCodeDelta = '0';
                     result = s
-                        .Select((c, i) => (c - '0') * (int)Math.Pow(10, (s.Length - i - 1)))
+                        .Select((c, i) => (c - CharToIntegerCodeDelta) * (int)Math.Pow(10, (s.Length - i - 1)))
                         .Sum(); 
                 }
             }
