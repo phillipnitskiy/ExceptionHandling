@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FirstCharReturner
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             while (true)
             {
@@ -19,6 +15,10 @@ namespace FirstCharReturner
                     Console.WriteLine(input.FirstChar());
                 }
                 catch (FormatException e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+                catch (ArgumentNullException e)
                 {
                     Console.WriteLine(e.Message);
                 }
