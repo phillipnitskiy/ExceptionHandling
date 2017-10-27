@@ -14,11 +14,7 @@ namespace FirstCharReturner
                 {
                     Console.WriteLine(input.FirstChar());
                 }
-                catch (FormatException e)
-                {
-                    Console.WriteLine(e.Message);
-                }
-                catch (ArgumentNullException e)
+                catch (Exception e) when (e is FormatException || e is ArgumentNullException)
                 {
                     Console.WriteLine(e.Message);
                 }
